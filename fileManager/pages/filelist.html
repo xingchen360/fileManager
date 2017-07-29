@@ -8,6 +8,35 @@
 			.filesIcon{
 				max-height: 20px;
 			}
+			.header{
+				font-weight: bold;
+			    padding-bottom: 5px;
+			    padding-top: 5px;
+			    background-color: #F2F7FD;
+			}
+			.header:hover{
+				background-color: #D3E5FC;
+			}
+			.dataRow{
+				padding-bottom: 5px;
+			    padding-top: 5px;
+			}
+			.dataRow:hover{
+				background: -webkit-linear-gradient(#F2F7FD, #C9DDF6,#F2F7FD); /* Safari 5.1 - 6.0 */
+			    background: -o-linear-gradient(#F2F7FD, #C9DDF6,#F2F7FD); /* Opera 11.1 - 12.0 */
+			    background: -moz-linear-gradient(#F2F7FD, #C9DDF6,#F2F7FD); /* Firefox 3.6 - 15 */
+			    background: linear-gradient(#F2F7FD, #C9DDF6,#F2F7FD); /* 标准的语法（必须放在最后） */
+				background-color: #F2F7FD;
+				border: 1px solid #B8D6FB;
+			}
+			.dataRow.selected{
+				background: -webkit-linear-gradient(#F2F7FD, #98C2F8,#F2F7FD); /* Safari 5.1 - 6.0 */
+			    background: -o-linear-gradient(#F2F7FD, #98C2F8,#F2F7FD); /* Opera 11.1 - 12.0 */
+			    background: -moz-linear-gradient(#F2F7FD, #98C2F8,#F2F7FD); /* Firefox 3.6 - 15 */
+			    background: linear-gradient(#F2F7FD, #98C2F8,#F2F7FD); /* 标准的语法（必须放在最后） */
+				background-color: #D0E3FC;
+				border: 1px solid #7DA2CE;
+			}
 		</style>
 	</head>
 	<body>
@@ -18,82 +47,37 @@
         	描述：文件管理表头模块
 	        -->
 			<div class="row fileManager_header">
-				<div class="col-md-4">标题</div>
-				<div class="col-md-2">创建日期</div>
-				<div class="col-md-2">是否发布</div>
-				<div class="col-md-4">标签</div>
+				<div class="col-md-6 col-sm-6 col-xs-8 header">标题</div>
+				<div class="col-md-2 col-sm-3 col-xs-4 header">创建日期</div>
+				<div class="col-md-3 col-sm-3 hidden-xs header">标签</div>
+				<div class="col-md-1 hidden-sm hidden-xs header">是否发布</div>
 			</div>
-			<div class="row">
-				<div class="col-md-4">
+			<div class="row dataRow">
+				<div class="col-md-6 col-sm-6 col-xs-8">
 					<img class="filesIcon" src="../../img/Folder.png"/>	
 					<span class="fileName">文件夹1发大发发大水发发发达范德萨发的范德萨发反倒是</span>	
 				</div>
-				<div class="col-md-2">2017-07-27 13:57:00</div>
-				<div class="col-md-2">是</div>
-				<div class="col-md-4">标签1 标签2 标签3</div>
+				<div class="col-md-2 col-sm-3 col-xs-4">2017-07-27 13:57:00</div>
+				<div class="col-md-3 col-sm-3 hidden-xs">标签1 标签2 标签3</div>
+				<div class="col-md-1 hidden-sm hidden-xs">是</div>
 			</div>
-			<div class="row">
-				<div class="col-md-4">
+			<div class="row dataRow selected">
+				<div class="col-md-6 col-sm-6 col-xs-8">
 					<img class="filesIcon" src="../../img/Folder.png"/>	
 					<span class="fileName">文件夹1发大发发大水发发发达范德萨发的范德萨发反倒是</span>	
 				</div>
-				<div class="col-md-2">2017-07-27 13:57:00</div>
-				<div class="col-md-2">是</div>
-				<div class="col-md-4">标签1 标签2 标签3</div>
+				<div class="col-md-2 col-sm-3 col-xs-4">2017-07-27 13:57:00</div>
+				<div class="col-md-3 col-sm-3 hidden-xs">标签1 标签2 标签3</div>
+				<div class="col-md-1 hidden-sm hidden-xs">是</div>
 			</div>
-			<div class="row">
-				<div class="col-md-4">
+			<div class="row dataRow">
+				<div class="col-md-6 col-sm-6 col-xs-8">
 					<img class="filesIcon" src="../../img/Folder.png"/>	
 					<span class="fileName">文件夹1发大发发大水发发发达范德萨发的范德萨发反倒是</span>	
 				</div>
-				<div class="col-md-2">2017-07-27 13:57:00</div>
-				<div class="col-md-2">是</div>
-				<div class="col-md-4">标签1 标签2 标签3</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<img class="filesIcon" src="../../img/Folder.png"/>	
-					<span class="fileName">文件夹1发大发发大水发发发达范德萨发的范德萨发反倒是</span>	
-				</div>
-				<div class="col-md-2">2017-07-27 13:57:00</div>
-				<div class="col-md-2">是</div>
-				<div class="col-md-4">标签1 标签2 标签3</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<img class="filesIcon" src="../../img/Folder.png"/>	
-					<span class="fileName">文件夹1发大发发大水发发发达范德萨发的范德萨发反倒是</span>	
-				</div>
-				<div class="col-md-2">2017-07-27 13:57:00</div>
-				<div class="col-md-2">是</div>
-				<div class="col-md-4">标签1 标签2 标签3</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<img class="filesIcon" src="../../img/Folder.png"/>	
-					<span class="fileName">文件夹1发大发发大水发发发达范德萨发的范德萨发反倒是</span>	
-				</div>
-				<div class="col-md-2">2017-07-27 13:57:00</div>
-				<div class="col-md-2">是</div>
-				<div class="col-md-4">标签1 标签2 标签3</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<img class="filesIcon" src="../../img/Folder.png"/>	
-					<span class="fileName">文件夹1发大发发大水发发发达范德萨发的范德萨发反倒是</span>	
-				</div>
-				<div class="col-md-2">2017-07-27 13:57:00</div>
-				<div class="col-md-2">是</div>
-				<div class="col-md-4">标签1 标签2 标签3</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<img class="filesIcon" src="../../img/Folder.png"/>	
-					<span class="fileName">文件夹1发大发发大水发发发达范德萨发的范德萨发反倒是</span>	
-				</div>
-				<div class="col-md-2">2017-07-27 13:57:00</div>
-				<div class="col-md-2">是</div>
-				<div class="col-md-4">标签1 标签2 标签3</div>
+				<div class="col-md-2 col-sm-3 col-xs-4">2017-07-27 13:57:00</div>
+				<div class="col-md-3 col-sm-3 hidden-xs">标签1 标签2 标签3</div>
+				<div class="col-md-1 hidden-sm hidden-xs">是</div>
 			</div>
 		</div>
 	</body>
